@@ -1,0 +1,71 @@
+/* General styles for the body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Container for the travel packages */
+.travel-packages {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+/* Each travel package card */
+.travel-package {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Title of each travel package */
+.travel-package h2 {
+    font-size: 24px;
+    color: #0073aa;
+    margin-bottom: 10px;
+}
+
+/* Description styling */
+.travel-package p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+/* Price styling */
+.travel-package p strong {
+    color: #2a9d8f;
+    font-size: 18px;
+}
+
+/* Hover effect to enhance interaction */
+.travel-package:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Availability status */
+.travel-package p:last-of-type {
+    font-weight: bold;
+    color: #e76f51;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .travel-packages {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .travel-package {
+        width: 90%;
+    }
+}
